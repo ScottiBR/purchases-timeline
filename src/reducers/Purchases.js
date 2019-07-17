@@ -45,7 +45,7 @@ const transformProduct = ({ timestamp, custom_data }) => {
     id: findKey(custom_data, TRANSACTION_ID),
     timeStamp: moment(timestamp),
     price: findKey(custom_data, PRODUCT_PRICE),
-    product: findKey(custom_data, PRODUCT_NAME)
+    name: findKey(custom_data, PRODUCT_NAME)
   };
 };
 const transformPurchase = ({ timestamp, revenue, custom_data }) => {

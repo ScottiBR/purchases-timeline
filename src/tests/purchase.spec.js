@@ -13,7 +13,7 @@ describe("Purchase TimeLine", () => {
     const state = Reducer({}, action);
     assert.equal(state.purchases[0].id, "3029386");
   });
-  it("should group products by transaction id ", () => {
+  it("should group products into purchase by transaction id ", () => {
     const action = { type: GET_PURCHASES_HISTORY, payload: fakeEndPoint };
     const state = Reducer({}, action);
     const purchase = state.purchases.find(

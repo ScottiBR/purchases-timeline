@@ -1,0 +1,46 @@
+.card {
+  width: 100%;
+  padding: 12px 16px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card--indicator {
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    display: inline-block;
+  }
+
+  &:before {
+    border-color: transparent $dark-gray;
+    border-width: 15px 15px 15px 0;
+    left: -15px;
+    top: 7px;
+  }
+
+  &:after {
+    border-color: transparent #fff;
+    border-width: 14px 14px 14px 0;
+    left: -14px;
+    top: 7px;
+  }
+}
+
+.card--animation-slide {
+  animation: slide-from-left 800ms forwards ease-out;
+}
+
+@keyframes slide-from-left {
+  0% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+  100% {
+    opacity: 1;
+  }
+}

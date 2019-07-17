@@ -1,0 +1,19 @@
+.timeline-badge {
+  animation: lazy-show 500ms forwards linear;
+  animation-delay: 800ms;
+  width: 25px;
+  padding-top: 10px;
+  position: relative;
+  z-index: 2;
+  margin-right: 20px;
+  opacity: 0;
+}
+
+@keyframes lazy-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

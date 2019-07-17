@@ -1,12 +1,12 @@
 import React, { useReducer, useEffect } from "react";
-import PurchaseContext from "../context/PurchaseContext";
 import PurchaseReducer from "../reducers/Purchases";
 import { getPurchasesHistory } from "../actions/Purchases";
+import PurchaseTimeLine from "../components/Purchase/purchaseTimeLine";
 
 const PurchasesHistory = () => {
-  const [state, dispatch] = useReducer(PurchaseReducer);
+  const [purchaseList, dispatch] = useReducer(PurchaseReducer);
   useEffect(() => {
-    const getData = async planetId => {
+    const getData = async () => {
       const response = await fetch(
         `https://storage.googleapis.com/dito-questions/events.json`
       );
@@ -18,11 +18,9 @@ const PurchasesHistory = () => {
   }, []);
 
   return (
-    <PurchaseContext.Provider state>
-      <div>
-        <h1>hello</h1>
-      </div>
-    </PurchaseContext.Provider>
+    <div className="main-container">
+      {purchaseList && <PurchaseTimeLine purchaseList={purchaseList} />}
+    </div>
   );
 };
 
