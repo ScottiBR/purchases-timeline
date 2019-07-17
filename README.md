@@ -1,4 +1,4 @@
-### Project
+### Project *in development*
 
 Made with React, ContextAPI and Hooks, also SASS for CSS pre-processor.
 
