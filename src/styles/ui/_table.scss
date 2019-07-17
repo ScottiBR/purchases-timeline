@@ -3,35 +3,34 @@
   width: 100%;
   overflow: hidden;
 }
-.table__header {
-  margin-bottom: 5px;
-}
 
-.table-head-cell {
-  padding: 0px 7px 12px 0px;
+.table-header-cell {
+  padding: 10px 0 10px 16px;
   text-align: left;
-}
-.table-body-cell {
-  padding: 8px 6px;
-  text-align: left;
-  color: $font-black-color;
+  color: $font-gray-color;
   font-size: $default-font-size;
 }
 
-.table-body-cell--title-bold {
-  font-weight: bold;
-}
-
-.table-head-cell__img {
+.table-header-cell__img {
   width: 10px;
   position: relative;
   margin-right: 2px;
 }
 
-.table-head-cell__title {
-  color: $font-gray-color;
+.table-body {
+  background-color: $table-cell-background;
+}
+
+.table-body__row {
+  border-bottom: 1px solid $dark-gray;
+}
+.table-body__cell {
+  padding: 10px 8px 10px 16px;
+  text-align: left;
+  color: $font-black-color;
   font-size: $default-font-size;
 }
-.table-align-right {
-  text-align: right;
+
+.table-body__cell--title-bold {
+  font-weight: bold;
 }

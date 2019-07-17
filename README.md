@@ -4,11 +4,9 @@ Made with React, and Hooks, also SASS for CSS pre-processor.
 
 The point of this project, is to demonstrate how to manipulate and visualize data coming from a external endpoint
 
-See the preview in [https://scottibr.github.io/purchases-timeline/](https://scottibr.github.io/purchases-timeline/)
-
 ## Available Scripts
 
-In the project directory, you can run:
+After running `npm install` in the project directory, you can execute:
 
 ### `npm start`
 

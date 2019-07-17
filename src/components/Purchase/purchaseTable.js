@@ -7,11 +7,11 @@ import place from "../../assets/icons/place.svg";
 import money from "../../assets/icons/money.svg";
 import { PRODUCT, PRICE, currencyFormatter } from "../../constants/Util";
 const PurchaseTable = ({ purchase }) => {
-  const { id, timeStamp, store, revenue, products } = purchase;
+  const { timeStamp, store, revenue, products } = purchase;
 
   return (
     <table className="table-container">
-      <thead className="table-header">
+      <thead>
         <tr>
           <HeaderCellWithIcon
             icon={calendar}
@@ -24,20 +24,22 @@ const PurchaseTable = ({ purchase }) => {
             title={currencyFormatter.format(revenue)}
           />
         </tr>
-        <tr>
-          <th className="table-body-cell table-body-cell--title-bold">
-            {PRODUCT}
-          </th>
-          <th />
-          <th />
-          <th className="table-body-cell  table-body-cell--title-bold">
-            {PRICE}
-          </th>
-        </tr>
       </thead>
-      <tbody className="table-body table-row-align-left">
+      <tbody className="table-body">
+        <tr className="table-body__row">
+          <td className="table-body__cell table-body__cell--title-bold">
+            {PRODUCT}
+          </td>
+          <td />
+          <td />
+          <td className="table-body__cell  table-body__cell--title-bold">
+            {PRICE}
+          </td>
+        </tr>
         {products &&
-          products.map(product => <PurchaseTableRow product={product} />)}
+          products.map(product => (
+            <PurchaseTableRow product={product} key={product.name} />
+          ))}
       </tbody>
     </table>
   );

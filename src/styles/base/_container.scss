@@ -1,16 +1,11 @@
-.main-container {
+.timeline {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 24px 12px;
-}
-
-.timeline-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   max-width: 500px;
 }
+
 .timeline__item {
   display: flex;
   align-items: flex-start;

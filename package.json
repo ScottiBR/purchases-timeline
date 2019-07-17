@@ -2,6 +2,7 @@
   "name": "purchases-timeline",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://scottibr.github.io/purchases-timeline",
   "dependencies": {
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
