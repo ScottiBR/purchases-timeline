@@ -1,8 +1,8 @@
-### Project *in development*
+### Project
 
-Made with React, ContextAPI and Hooks, also SASS for CSS pre-processor.
+Made with React, and Hooks, also SASS for CSS pre-processor.
 
-The point of this project, is to demonstrate how to manipulate and visualize data coming from a endpoint
+The point of this project, is to demonstrate how to manipulate and visualize data coming from a external endpoint
 
 See the preview in [https://scottibr.github.io/purchases-timeline/](https://scottibr.github.io/purchases-timeline/)
 
